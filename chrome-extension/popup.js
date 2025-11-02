@@ -8,7 +8,8 @@ async function checkServerStatus() {
   const statusText = document.getElementById('server-status');
 
   try {
-    const response = await fetch('http://46.202.93.22:5000/health', {
+    // const response = await fetch('http://46.202.93.22:5001/health', {
+    const response = await fetch('http://localhost:5001/health', {
       method: 'GET',
       signal: AbortSignal.timeout(2000)
     });
@@ -102,5 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
   loadJobsCount();
 
   // Refresh server status every 5 seconds
-  setInterval(checkServerStatus, 5000);
+  setInterval(checkServerStatus, 5001);
 });

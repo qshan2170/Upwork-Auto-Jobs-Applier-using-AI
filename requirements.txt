@@ -4,3 +4,6 @@ selenium
 webdriver_manager
 colorama
 python-dotenv
+flask
+flask_cors
+socksio

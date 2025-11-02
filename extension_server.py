@@ -109,7 +109,7 @@ def home():
             <div class="endpoint">
                 <h3>GET /health</h3>
                 <p>Health check endpoint</p>
-                <code>curl http://46.202.93.22:5000/health</code>
+                <code>curl http://localhost:5001/health</code>
             </div>
 
             <div class="endpoint">
@@ -232,7 +232,7 @@ if __name__ == '__main__':
     print("\n" + "="*70)
     print("🚀 UPWORK COVER LETTER GENERATOR - EXTENSION SERVER")
     print("="*70)
-    print("\n📡 Starting Flask server on http://localhost:5000")
+    print("\n📡 Starting Flask server on http://localhost:5001")
     print("🔌 Extension can now connect and send jobs\n")
     print("💡 Instructions:")
     print("  1. Install Chrome extension (load unpacked in chrome://extensions)")
@@ -241,4 +241,4 @@ if __name__ == '__main__':
     print("  4. Cover letter will be copied to clipboard!\n")
     print("="*70 + "\n")
 
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)

@@ -5,8 +5,8 @@
 
 // Configuration
 // Use production URL when deployed, localhost for development
-const API_URL = 'http://46.202.93.22:5000';  // Production Hostinger VPS
-// const API_URL = 'http://localhost:5000';  // Development (uncomment to use local)
+// const API_URL = 'http://46.202.93.22:5001';  // Production Hostinger VPS
+const API_URL = 'http://localhost:5001'; // Development (uncomment to use local)
 
 // Create floating button
 function createExtractButton() {
@@ -289,7 +289,7 @@ function showNotification(message, type = 'info') {
   setTimeout(() => {
     notification.classList.add('fade-out');
     setTimeout(() => notification.remove(), 300);
-  }, 5000);
+  }, 5001);
 }
 
 // Initialize when page loads

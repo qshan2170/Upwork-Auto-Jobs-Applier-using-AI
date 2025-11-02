@@ -25,7 +25,7 @@ source venv/bin/activate
 python extension_server.py
 ```
 
-Server will run on `http://localhost:5000`
+Server will run on `http://localhost:5001`
 
 ### Step 2: Install Chrome Extension
 
@@ -72,7 +72,7 @@ Server will run on `http://localhost:5000`
 
 ### "Cannot connect to server" error
 - Make sure `extension_server.py` is running
-- Check it's running on `http://localhost:5000`
+- Check it's running on `http://localhost:5001`
 - Run `python extension_server.py` in terminal
 
 ### Cover letter not copying
